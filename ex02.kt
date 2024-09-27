@@ -2,7 +2,7 @@
 fun main() {
     // Solicita um número inteiro ao usuário
     print("Digite um número inteiro: ")
-    val numero = readLine()?.toIntOrNull()  // Converte a entrada para inteiro ou retorna null se a conversão falhar
+    val numero = readLine()?.toIntOrNull()?:0 // Converte a entrada para inteiro ou retorna null se a conversão falhar
 
     // Verifica se a entrada é válida
     if (numero != null) {
